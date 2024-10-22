@@ -8,7 +8,7 @@
 
     
     <div class="container-sm mt-3 p-3" style="max-width: 600px;">
-        <form method="" action="" class="p-3 bg-warning-subtle rounded" >
+        <form method="" action="" class="p-3 bg-secondary-subtle rounded" >
             @csrf
             <div>
                 <h2 class="text-center" style="font-family: Lato, sans-serif; font-weight:550">Contacto</h2>

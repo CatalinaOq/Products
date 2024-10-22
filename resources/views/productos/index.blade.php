@@ -3,10 +3,10 @@
 @section('title','Products')
 
 @section('content')
-<h1 class="text-center" style="font-family: Lato, sans-serif;">Lista De Productos</h1>
+<h1 class="text-center" style="font-family: Lato, sans-serif;">Productos canasta familiar</h1>
 
 <div>
-    <a class="btn btn-dark my-5 ms-2" href="{{route('productos.create')}}">Crear Producto</a>
+    <a class="btn btn-success my-5 ms-2" href="{{route('productos.create')}}">Crear Producto</a>
 
     <div class="table-responsive table-bordered">
         <table class="table table-bordered table-striped"  style="max-width: 80%; margin: 0 auto;">
@@ -29,7 +29,7 @@
                     </td>
                     <td>
                         <div class="d-flex justify-content-center pt-5">
-                            <a class="btn btn-primary me-2" href="{{route('edit',$producto->id)}}">Editar</a>
+                            <a class="btn btn-warning me-2" href="{{route('edit',$producto->id)}}">Editar</a>
     
                             <form action="{{route('delete',$producto->id)}}" method="POST">
                                 @csrf

@@ -3,8 +3,8 @@
 @section('title','Crear Producto')
 
 @section('content')
-<div class="container-sm mt-3 p-3" style="max-width: 600px;">
-    <form action="{{route('productos.store')}}" class="p-3 bg-warning-subtle rounded" method="POST" enctype="multipart/form-data">
+<div class="container-sm mt-3 p-3" style="max-width: 700px;">
+    <form action="{{route('productos.store')}}" class="p-3 bg-secondary-subtle rounded" method="POST" enctype="multipart/form-data">
         @csrf
         <div>
             <h2 class="text-center" style="font-family: Lato, sans-serif; font-weight:550">Crear Producto</h2>

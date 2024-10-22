@@ -12,13 +12,13 @@
 <body>
     <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
         <ul class="nav nav-pills">
-            <li class="nav-item"><a class="nav-link" href="{{ route('home')}}">@lang('home')</a></li>
+            <li class="nav-item"><a class="nav-link" style="color:red;" href="{{ route('home')}}">@lang('Home')</a></li>
     
-            <li class="nav-item"><a class="nav-link" href="{{ route('about')}}">@lang('about')</a></li>
+            <li class="nav-item"><a class="nav-link" style="color:red;" href="{{ route('about')}}">@lang('About')</a></li>
     
-            <li class="nav-item"><a class="nav-link" href="{{ route('contact')}}">@lang('contact')</a></li>
+            <li class="nav-item"><a class="nav-link" style="color:red;" href="{{ route('contact')}}">@lang('Contact')</a></li>
             
-            <li class="nav-item"><a class="nav-link" href="{{ route('productos.index')}}">@lang('products')</a></li>
+            <li class="nav-item"><a class="nav-link" style="color:red;" href="{{ route('productos.index')}}">@lang('Products')</a></li>
     
         </ul>
     </nav>

@@ -3,8 +3,8 @@
 @section('title','Editar Producto')
 
 @section('content')
-<div class="container mt-3 p-3" style="max-width: 600px;">
-    <form action="{{route('productos.update',$producto)}}" class="p-3 bg-warning-subtle rounded" method="POST" enctype="multipart/form-data">
+<div class="container mt-3 p-3" style="max-width: 700px;">
+    <form action="{{route('productos.update',$producto)}}" class="p-3 bg-secondary-subtle rounded" method="POST" enctype="multipart/form-data">
         @csrf
         @method('PUT')
         <div>
@@ -20,7 +20,6 @@
         <input type="text" name="descripcion" class="form-control form-control-sm" required value="{{$producto->descripcion}}">
         <br>
         <div class="my-2">
-            <!--<label for="Imagen_Actual" class="form-label" style="font-family: Lato, sans-serif; font-weight:550">Imagen Actual:</label>-->
             <img src="{{ asset('imagen/' . $producto->imagen) }}" width="250px" height="150px">
         </div>
         <label for="Imagen" class="form-label" style="font-family: Lato, sans-serif; font-weight:550">Selecciona una nueva imagen:</label>
